@@ -1,0 +1,64 @@
+pre.code {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0;
+}
+
+
+pre.code code {
+  display: contents;
+  background: #1e1e1e;
+  border: none;
+  margin-left: -50px;
+  margin-top: -40px;
+  margin-bottom: -50px
+}
+
+pre.code code span.keyword {
+  color: #569cd6;
+}
+
+pre.code code span.comment {
+  color: #6a9955;
+}
+
+pre.code code span.string {
+  color: #ce9178;
+}
+
+pre.code code span.function {
+  color: #dcdcaa;
+}
+
+pre.code code span.variable {
+  color: #b8f398;
+}
+
+pre.code code span.print {
+  color: #65e2c9;
+}
+
+pre.code code span.array {
+  color: #e83e8c;
+}
+
+pre.code code span.php {
+  color: #be09eb;
+}
+
+pre.code code span.comparator {
+  color: #b81111;
+}
+
+pre.code code span.boolean {
+  color: aqua;
+}
+
+pre.code code span.tag {
+  color: #fe0076;
+}
