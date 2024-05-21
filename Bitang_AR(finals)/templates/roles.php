@@ -18,7 +18,6 @@
     justify-content: space-between; 
     margin-left: 30px;
     margin-right: 30px;
-    overflow-x:auto;
   }
 
   .options {

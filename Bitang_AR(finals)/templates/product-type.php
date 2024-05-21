@@ -3,7 +3,7 @@
     background:transparent;
     backdrop-filter: blur(10px);
     padding:30px;
-    border-radius:30px;
+    border-radius:30px; 
     margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: 0px 0px 10px #f96863, 0px 0px 10px #f96863 inset;
@@ -13,7 +13,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px; 
-    overflow-x: auto;
   }
 
   .product-item {
@@ -71,7 +70,6 @@
     display: flex;
     justify-content: space-between; 
     margin-right:20px;
-    overflow-x: auto;
 
   }
 

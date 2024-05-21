@@ -1,5 +1,14 @@
 <?php include 'templates/header.php' ?>
-
+<style>
+  .img-space {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+</style>
 
 <?php
 include "templates/conn.php";
@@ -31,10 +40,13 @@ $result = $conn->query($sql);
     echo "<div style='display: flex-box; align-items: center;'>"; 
 
     // If the user account does have a profile photo or not
+    echo "<div class='img-space'>";
     if ($row['img'] != null) {
-              echo "<img src='images/products/" . $row["img"] . "' height='200px' width='250px' style='margin-right: 20px;'>"; 
+              echo "<img src='images/products/" . $row["img"] . "' height='auto' width='250px' style='margin-right: 20px;'>"; 
+              echo "</div>";
     } else {
         echo "<img src='images/products/default.jpg' height='250px' width='250px' style='margin-right: 20px;'>";
+        echo "</div>";
     }
     echo "</div";
     
