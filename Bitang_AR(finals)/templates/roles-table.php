@@ -7,7 +7,7 @@
     while($row = mysqli_fetch_assoc($result)) {
       echo "<tr>";
 
-      if ($row['image'] == NULL) {
+      if ($row['image'] == NULL || !file_exists('images/profile/' . $row['image'])) {
         echo "<td><img src='images/profile/default.png' class='rounded-circle' width='50' height='50'></td>";
       } else {
           echo "<td><img src='images/profile/" . $row["image"] . "' class='rounded-circle' width='50' height='50'></td>";
