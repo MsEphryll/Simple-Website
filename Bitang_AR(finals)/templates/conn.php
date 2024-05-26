@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 
 // $servername = "65.19.141.67";
@@ -6,9 +6,6 @@
 // $password = "four0four";
 // $dbname = "websys_Bitang";
 
-=======
-<?php 
->>>>>>> d7cf2ff119f8eda5f39c6635eefd3913974d3ded
 $servername = "localhost";
 $username = "root";
 $password = "root";

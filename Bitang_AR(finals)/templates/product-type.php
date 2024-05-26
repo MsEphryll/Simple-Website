@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px; 
+    
   }
 
   .product-item {
@@ -75,7 +76,7 @@
   }
 
   .description-scroll {
-    max-height: 120px;
+    height: 120px;
     padding: 15px;
     overflow-y: auto;
     text-align: justify;
