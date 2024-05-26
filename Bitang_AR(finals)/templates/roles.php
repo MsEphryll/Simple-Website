@@ -2,7 +2,8 @@
   .body-border {
     background:transparent;
     backdrop-filter: blur(10px);
-    border-radius:30px;
+    /* border-radius:30px; */
+    border-radius:50px 50px 0px 0px;
     margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: 0px 0px 10px #f96863, 0px 0px 10px #f96863 inset;

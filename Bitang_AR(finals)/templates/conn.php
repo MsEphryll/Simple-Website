@@ -1,8 +1,13 @@
 <?php 
-$servername = "65.19.141.67";
-$username = "websys_abrilnotfound";
-$password = "four0four";
-$dbname = "websys_Bitang";
+// $servername = "65.19.141.67";
+// $username = "websys_abrilnotfound";
+// $password = "four0four";
+// $dbname = "websys_Bitang";
+
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "april";
 
 // Create connection
 $conn =  mysqli_connect($servername, $username, $password, $dbname);

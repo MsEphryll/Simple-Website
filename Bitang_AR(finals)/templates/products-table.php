@@ -10,7 +10,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
   // image
   echo "<div class='img-space'>";
-  if ($row['img'] == NULL) {
+  if ($row['img'] == NULL || !file_exists('images/products/' . $row['img'])) {
     echo "<img src='images/products/default.jpg' height='100px' width:'100px'>";
   } else {
     echo "<img src='images/products/" . $row["img"] . "' height='250px' width:'250px'>";

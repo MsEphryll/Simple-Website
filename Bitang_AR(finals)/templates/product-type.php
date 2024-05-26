@@ -17,6 +17,7 @@
 
   .product-item {
     flex: 0 0 calc(33.33% - 20px);
+    margin:auto;
   }
 
   .product-item-inner {
