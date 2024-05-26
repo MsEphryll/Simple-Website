@@ -1,10 +1,10 @@
 <<<<<<< HEAD
 <?php
 
-// $servername = "65.19.141.67";
-// $username = "websys_abrilnotfound";
-// $password = "four0four";
-// $dbname = "websys_Bitang";
+// $servername = "";
+// $username = "";
+// $password = "";
+// $dbname = "";
 
 =======
 <?php 
