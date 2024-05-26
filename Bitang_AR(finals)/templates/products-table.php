@@ -40,9 +40,11 @@ while ($row = mysqli_fetch_assoc($result)) {
   echo "</div>";
   // end of the div for product name and dropdown button
 
+  $number = number_format($row['price'],2,'.',',');
   echo "<div>
-          <h3>₱" . $row['price'] . "</h3>
+          <h3><strong>₱" . $number . "</strong></h3>
         </div>";
+        
 
   if ($row["qty"] == 0){
     echo "<p class='text-body-tertiary' >Sold Out</p>";
