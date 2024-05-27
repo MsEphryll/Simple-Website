@@ -64,7 +64,6 @@ if(isset($_GET["id"]) && is_numeric($_GET["id"])) {
                         <label for='exampleInputPassword1' class='form-label mt-4'>Quantity</label>
                         <input type='text' class='form-control' id='exampleInputPassword1' name='qty' value='" .$row['qty'] . "' required>
                       </div>
-
                       
                   </fieldset><br>";
             }

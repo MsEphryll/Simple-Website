@@ -41,7 +41,7 @@ $result = $conn->query($sql);
 
     // If the user account does have a profile photo or not
     echo "<div class='img-space'>";
-    if ($row['img'] != null) {
+    if ($row['img'] != null || !file_exists('images/products/' . $row['img'])) {
               echo "<img src='images/products/" . $row["img"] . "' height='auto' width='250px' style='margin-right: 20px;'>"; 
               echo "</div>";
     } else {
@@ -81,7 +81,7 @@ $result = $conn->query($sql);
 
 $conn->close();
 
-// Handle the file upload
+// Handle the file upload 
 if(isset($_POST["submit"])) {
   // Your file upload code here
   // Modify the SQL update query to include the "id" parameter in the WHERE clause

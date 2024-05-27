@@ -64,23 +64,6 @@ body {
     include "templates/products-table.php";
     ?>
 
-    <div class='product-item'>
-      <div class='product-item-inner'>
-        <!-- image -->
-          <a href="regproductform.php">
-            <div class='img-space'>
-              <img style="width: 180px; height: 180px;" src="assets/icons/add-product.png" alt="">
-            </div>
-          </a>
-        
-        <!-- label -->
-        <div style="text-align: center; justify-content: center;">
-          <h5>
-            <strong >Add New Product</strong>
-          </h5>
-        </div>  
-      </div>
-    </div>
   </div><br>
 </div>
 

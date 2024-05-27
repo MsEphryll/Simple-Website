@@ -76,6 +76,7 @@
   }
 
   .description-scroll {
+    width: 400px;
     height: 120px;
     padding: 15px;
     overflow-y: auto;
