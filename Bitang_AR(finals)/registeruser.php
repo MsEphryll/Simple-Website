@@ -7,8 +7,8 @@ include 'templates/conn.php';
   .form-cont{
     background:transparent;
     backdrop-filter: blur(20px);
-    width: 400px;
-    height: 580px;
+    width: 500px;
+    max-height: 1000px;
     margin:auto;
     padding:20px;
     border: 2px solid #f96863;
@@ -58,11 +58,13 @@ $result = mysqli_query($conn, $sql);
             ?>
         </select>
       </div>
-    </fieldset>
+    </fieldset><br>
+
+    <a href="newrole-form.php" style="text-decoration:underline; margin-top:10px;"><img src="assets/icons/add-user.png" alt="" width='30px' height='30px'>Add New Role</a>
 
     <!-- Submit Button -->
     <br>
-    <button type="submit" style="margin-left: 190px;" class="btn btn-secondary"><a href="users.php">Cancel</a></button>
+    <button type="submit" style="margin-left: 280px;" class="btn btn-secondary"><a href="users.php">Cancel</a></button>
     <input type="submit" style='float:right'; class="btn btn-primary"></button>
     <!-- <input type="submit">  -->
   </form>
@@ -71,3 +73,5 @@ $result = mysqli_query($conn, $sql);
 </div>
 
 <?php include 'templates/footer.php' ?>
+
+
