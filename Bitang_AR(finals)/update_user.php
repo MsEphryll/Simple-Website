@@ -4,7 +4,7 @@
     background:transparent;
     backdrop-filter: blur(20px);
     width: 600px;
-    height: auto;
+    max-height: 1000px;
     margin:auto;
     padding:20px;
     border: 2px solid #f96863;
@@ -62,7 +62,19 @@
 <?php
 include "templates/conn.php";
 
-$sql = "SELECT * FROM users WHERE id=" . $_GET["id"];
+$sql = "SELECT  users.id, 
+                users.complete_name, 
+                users.email, 
+                users.active, 
+                users.image,
+                users.date_at,
+                role.role_name
+        FROM
+                users 
+        INNER JOIN
+                role
+        ON 
+                users.role_id = role.id  WHERE users.id=" . $_GET["id"];
         
 $result = mysqli_query($conn, $sql);
 
@@ -93,8 +105,23 @@ echo "<fieldset>
       <label for='exampleInputPassword1' class='form-label mt-4'>Email</label>
       <input type='email' class='form-control' id='exampleInputPassword1' autocomplete='off' name='email' value='" .$row['email'] . "' required>
       <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small>
-    </div>
-</fieldset><br>";
+    </div>";
+?>
+    <!-- role selection -->
+    <div>
+        <label for="exampleSelect1" class="form-label mt-4">Role</label>
+        <select class="form-select" id="exampleSelect1" name='role'>
+            <?php
+              $sql2 = "SELECT * FROM role ORDER BY role_name ASC";
+              $result2 = mysqli_query($conn, $sql2);
+              while($row=mysqli_fetch_array($result2)){
+                echo "<option value='". $row['id']."'>" . $row['role_name']. "</option>";
+              }
+            ?>
+        </select>
+      </div>
+<?php
+echo "</fieldset><br>";
 
     
     // BUTTONS

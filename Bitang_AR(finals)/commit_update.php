@@ -1,7 +1,7 @@
 <?php
 include "templates/conn.php";
 
-$sql = "UPDATE users SET complete_name='". $_POST['cName'] ."', email='". $_POST['email'] ."' WHERE id=" .$_POST['id'];
+$sql = "UPDATE users SET complete_name='". $_POST['cName'] ."', email='". $_POST['email'] ."', role_id='". $_POST['role'] ."' WHERE id=" .$_POST['id'];
 
 if (mysqli_query($conn, $sql)) {
   echo "Record updated successfully";
