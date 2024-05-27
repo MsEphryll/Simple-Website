@@ -29,7 +29,7 @@ $result = mysqli_query($conn, $sql);
 
 <div class='form-cont'>
   <br>
-  <h3 style='text-align:center; margin-auto; width:360px;'>Register User</h3>
+  <h3 style='text-align:center; margin-auto;'>Register User</h3>
   <form action="reguser.php" method="POST">
     <fieldset>
       <div>

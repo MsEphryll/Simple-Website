@@ -6,8 +6,8 @@
   .form-cont{
     background:transparent;
     backdrop-filter: blur(20px);
-    width: 400px;
-    height: 650px;
+    width: 600px;
+    max-height: 1000px;
     margin:auto;
     padding:20px;
     border: 2px solid #f96863;
@@ -25,7 +25,7 @@ $result = mysqli_query($conn, $sql);
 <div style='overflow-x:auto'>
 <div class='form-cont'>
   <br>
-  <h3 style='text-align:center; margin-auto; width:360px;' >Register Product</h3>
+  <h3 style='text-align:center; margin-auto;' >Register Product</h3>
   <form action="regproduct.php" method="POST" >
     <fieldset>
       <div>
@@ -60,7 +60,9 @@ $result = mysqli_query($conn, $sql);
     </fieldset>
     <br>
 
-    <button type="submit" style="margin-left: 190px;" class="btn btn-secondary"><a href="products.php">Cancel</a></button>
+    <a href="newcategory-form.php" style="text-decoration:underline; margin-top:10px;"><img src="assets/icons/add-product.png" alt="" width='30px' height='30px'>Add New Category</a><br>
+
+    <button type="submit" style="margin-left: 380px;" class="btn btn-secondary"><a href="products.php">Cancel</a></button>
     <input type="submit" class="btn btn-primary" style='float:right;'>
   </form>
   <br>
